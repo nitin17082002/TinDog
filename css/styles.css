@@ -4,6 +4,7 @@ body{
 #title{
     background-color: #ff4c68;
     color: white;
+    
 }
 h1{
     font-family: 'Montserrat-Bold';
@@ -13,12 +14,14 @@ h1{
     
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 15%;
 }
 /* Title-image */
 .title-image {
     width: 60%;
     transform: rotate(20deg);
+    position: absolute;
+    right: 30%;
 
   }
   /* Navigation bar */
@@ -47,6 +50,9 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
   }
   .feature-box{
     text-align: center;
@@ -110,4 +116,14 @@ p{
 }
 .pricing-column{
     padding: 3% 2%;
+}
+@media (max-width:1028px){
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+  #title{
+    text-align: center;
+  }
+
 }
